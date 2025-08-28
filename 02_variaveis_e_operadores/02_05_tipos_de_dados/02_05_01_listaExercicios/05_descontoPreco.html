@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
+const precoOriginal = Number (prompt(`qual o preço?`));
+const desconto = Number (prompt(`qual o desconto em porcentagem que será aplicado ao produto?`));
 
-    
     //PROCESSAMENTO
 
+const precoFinal = Number (`${precoOriginal - precoOriginal * desconto / 100}`);
     
     //SAÍDA
-
+document.write (`o preço final do produto após ser a aplicado o desconto será de R$${precoFinal}`);
 </script>

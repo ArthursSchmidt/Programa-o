@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
+const aluguel = Number (prompt(`informe a quantidade de dias do aluguel`));
+const custokm = Number (prompt(`informe a quantidade de Km rodados`));
 
     
     //PROCESSAMENTO
-
+const diaria = aluguel * 60
+const Km = custokm * 0.15
+const total = aluguel + custokm
     
     //SAÍDA
-
+document.write (`o valor a ser pago é de R$${total}`)
 </script>

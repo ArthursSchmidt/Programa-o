@@ -7,11 +7,16 @@
     */
 
     //ENTRADA
-
+    const numero1 = Number(prompt(`insira o primeiro número`).replace("," , ".").trim());
+    const numero2 = Number(prompt(`insira o segundo número`).replace("," , ".").trim());
+    const numero3 = Number(prompt(`insira o terceiro número`).replace("," , ".").trim());
 
     //PROCESSAMENTO
+    listaNumeros = [numero1, numero2, numero3]
 
+    const listaFinal = listaNumeros.sort((a, b) => b-a);
 
     //SAÍDA
+alert(listaFinal[2]+ " - " +listaFinal[1]+ " - " +listaFinal[0]);
 
 </script>

@@ -7,11 +7,25 @@
     */
 
     //ENTRADA
-
+    const numero1 = Number(prompt(`insira o primeiro número`).replace("," , ".").trim());
+    const numero2 = Number(prompt(`insira o segundo número`).replace("," , ".").trim());
 
     //PROCESSAMENTO
+    let numeros = [];
 
-
-    //SAÍDA
-
-</script>
+    if (numero1 < numero2) {
+    numeros.push(numero1);
+    numeros.push(numero2);
+    } 
+    else if (numero2 < numero1) {
+    numeros.push(numero2);
+    numeros.push(numero1);
+    } 
+    else {
+    numeros.push(numero1);
+    numeros.push(numero2);
+    }
+        //SAÍDA
+    const resultado = numeros.join(" - ");
+    alert(resultado);
+    </script>

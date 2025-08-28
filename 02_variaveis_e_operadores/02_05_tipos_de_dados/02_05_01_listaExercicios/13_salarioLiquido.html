@@ -7,11 +7,13 @@
     // IR: 11 % do salário bruto
 
     //ENTRADA
-
+const horasTrab = Number (prompt(`quantas horas você trabalha por dia?`));
+const salarioPorHora = Number (prompt(`qual o seu salário por hora trabalhada?`));
     
     //PROCESSAMENTO
-
-    
+const mes = horasTrab + salarioPorHora; 
+const bruto = (mes- (mes * 0.19));
+     
     //SAÍDA
-
+document.write (`você ganha R$${bruto} de salario liquido `)
 </script>

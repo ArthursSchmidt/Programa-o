@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
+const cigarrosPorDia = Number (prompt(`quantos cigarros você fuma por dia?`));
+const anosFumando = Number (prompt(`a quantos anos você fuma?`));
     
     //PROCESSAMENTO
 
+const totalCigarros = cigarrosPorDia * 365 * anosFumando;
+const minutosPerdidos = totalCigarros * 10;
+const diasPerdidos = Math.floor (minutosPerdidos / (60 * 24));
     
     //SAÍDA
-
+document.write (`você perdeu ${diasPerdidos} dias da sua vida miseravel seu merda, para de fumar porra!!`)
 </script>
